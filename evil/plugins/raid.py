@@ -4,7 +4,7 @@ from pyrogram import Client, filters
 from helpers.data import OneWord
 from config import *
 
-@Client.on_message(filters.user(SUDO_USERS) & filters.command(["RANDI"], [""]))
+@Client.on_message(filters.user(SUDO_USERS) & filters.command(["BOSDA"], [""]))
 async def oneword(onew: Client, e: Message):
       if e.reply_to_message:
           id = e.reply_to_message_id
