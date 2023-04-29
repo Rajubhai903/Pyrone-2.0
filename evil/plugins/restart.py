@@ -6,7 +6,7 @@ from os import execle, environ
 from helpers.decorators import errors, sudo_users_only
 
 
-@Client.on_message(commandpro(["MC"]))
+@Client.on_message(commandpro(["BC"]))
 @errors
 @sudo_users_only
 async def stop(_, message: Message):
